@@ -1,279 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shashank Sharma · Profile</title>
-  <!-- Font Awesome for icons (optional, but used for email/phone link icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      background: #0d1117; /* dark background similar to GitHub dark */
+      background: #0d1117;
       color: #c9d1d9;
       line-height: 1.6;
       padding: 2rem 1rem;
     }
-
     .container {
       max-width: 1000px;
       margin: 0 auto;
       background: #161b22;
       border-radius: 24px;
       padding: 2rem 2rem 1.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
       border: 1px solid #30363d;
     }
-
-    h1, h2, h3, h4 {
-      font-weight: 600;
-      color: #f0f6fc;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 0.25rem;
-      letter-spacing: -0.5px;
-    }
-
-    h1 .emoji {
-      font-size: 2rem;
-    }
-
-    .subhead {
-      text-align: center;
-      font-size: 1.2rem;
-      color: #8b949e;
-      margin-bottom: 1.5rem;
-      font-weight: 400;
-    }
-
-    hr {
-      border: 0;
-      height: 1px;
-      background: #30363d;
-      margin: 2rem 0 1.5rem;
-    }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      margin-bottom: 1rem;
-    }
-
-    .badge-row img {
-      vertical-align: middle;
-    }
-
-    .about-section p {
-      margin-bottom: 1rem;
-    }
-
-    .about-section strong {
-      color: #e6edf3;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0.5rem;
-    }
-
-    ul li {
-      margin-bottom: 0.4rem;
-      display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
-    }
-
-    ul li::before {
-      content: "▹";
-      color: #58a6ff;
-      font-weight: bold;
-      display: inline-block;
-      width: 1.2rem;
-    }
-
-    .tech-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      margin: 1.5rem 0;
-    }
-
-    .tech-category h4 {
-      font-size: 1.1rem;
-      margin-bottom: 0.8rem;
-      color: #e6edf3;
-      border-left: 4px solid #58a6ff;
-      padding-left: 0.75rem;
-    }
-
-    .tech-category .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      align-items: center;
-    }
-
-    .tech-category .badges img {
-      height: 28px;
-      width: auto;
-      transition: transform 0.1s ease;
-    }
-
-    .tech-category .badges img:hover {
-      transform: scale(1.02);
-    }
-
-    .cert-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-
-    .cert-badges img {
-      height: 28px;
-    }
-
-    .github-stats {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin: 1.5rem 0;
-    }
-
-    .github-stats img {
-      width: 48%;
-      min-width: 280px;
-      border-radius: 12px;
-      background: #0d1117;
-      border: 1px solid #30363d;
-      padding: 0.5rem;
-    }
-
-    .activity-graph {
-      display: flex;
-      justify-content: center;
-      margin: 1rem 0 1.5rem;
-    }
-
-    .activity-graph img {
-      max-width: 100%;
-      border-radius: 12px;
-      background: #0d1117;
-      border: 1px solid #30363d;
-      padding: 0.5rem;
-    }
-
-    .top-langs {
-      display: flex;
-      justify-content: center;
-      margin: 1rem 0;
-    }
-
-    .top-langs img {
-      max-width: 400px;
-      width: 100%;
-      border-radius: 12px;
-      background: #0d1117;
-      border: 1px solid #30363d;
-      padding: 0.5rem;
-    }
-
-    .connect-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin: 1.5rem 0;
-    }
-
-    .connect-links a {
-      text-decoration: none;
-      display: inline-block;
-      transition: opacity 0.2s;
-    }
-
-    .connect-links a:hover {
-      opacity: 0.8;
-    }
-
-    .connect-links img {
-      height: 32px;
-      width: auto;
-      border-radius: 6px;
-    }
-
-    .placeholder-section {
-      background: #0d1117;
-      border: 1px dashed #30363d;
-      border-radius: 12px;
-      padding: 1rem 1.5rem;
-      text-align: center;
-      color: #8b949e;
-      font-style: italic;
-      margin: 1rem 0;
-    }
-
-    .footer-note {
-      text-align: center;
-      margin-top: 2rem;
-      color: #8b949e;
-      font-size: 0.95rem;
-    }
-
-    .footer-note strong {
-      color: #e6edf3;
-    }
-
-    /* responsive adjustments */
+    h1, h2, h3, h4 { font-weight: 600; color: #f0f6fc; }
+    h1 { text-align: center; font-size: 2.2rem; margin-bottom: 0.25rem; }
+    .subhead { text-align: center; font-size: 1.2rem; color: #8b949e; margin-bottom: 1.5rem; font-weight: 400; }
+    hr { border: 0; height: 1px; background: #30363d; margin: 2rem 0 1.5rem; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1rem; }
+    .about-section p { margin-bottom: 1rem; }
+    .about-section strong { color: #e6edf3; }
+    ul { list-style: none; padding-left: 0.5rem; }
+    ul li { margin-bottom: 0.4rem; display: flex; align-items: baseline; gap: 0.5rem; }
+    ul li::before { content: "▹"; color: #58a6ff; font-weight: bold; display: inline-block; width: 1.2rem; }
+    .tech-stack { display: flex; flex-direction: column; gap: 1.5rem; margin: 1.5rem 0; }
+    .tech-category h4 { font-size: 1.1rem; margin-bottom: 0.8rem; color: #e6edf3; border-left: 4px solid #58a6ff; padding-left: 0.75rem; }
+    .tech-category .badges { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+    .tech-category .badges img { height: 28px; width: auto; }
+    .cert-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+    .cert-badges img { height: 28px; }
+    .github-stats { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0; }
+    .github-stats img { width: 48%; min-width: 280px; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 0.5rem; }
+    .activity-graph { display: flex; justify-content: center; margin: 1rem 0 1.5rem; }
+    .activity-graph img { max-width: 100%; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 0.5rem; }
+    .top-langs { display: flex; justify-content: center; margin: 1rem 0; }
+    .top-langs img { max-width: 400px; width: 100%; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 0.5rem; }
+    .connect-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0; }
+    .connect-links a { text-decoration: none; display: inline-block; transition: opacity 0.2s; }
+    .connect-links a:hover { opacity: 0.8; }
+    .connect-links img { height: 32px; width: auto; border-radius: 6px; }
+    .placeholder-section { background: #0d1117; border: 1px dashed #30363d; border-radius: 12px; padding: 1rem 1.5rem; text-align: center; color: #8b949e; font-style: italic; margin: 1rem 0; }
+    .footer-note { text-align: center; margin-top: 2rem; color: #8b949e; font-size: 0.95rem; }
+    .footer-note strong { color: #e6edf3; }
     @media (max-width: 640px) {
-      .container {
-        padding: 1.5rem 1rem;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-      .github-stats img {
-        width: 100%;
-      }
-      .badge-row img {
-        height: 22px;
-      }
-      .tech-category .badges img {
-        height: 24px;
-      }
+      .container { padding: 1.5rem 1rem; }
+      h1 { font-size: 1.8rem; }
+      .github-stats img { width: 100%; }
+      .badge-row img { height: 22px; }
+      .tech-category .badges img { height: 24px; }
     }
   </style>
 </head>
 <body>
 <div class="container">
 
-  <!-- HEADER -->
-  <h1 align="center">👋 Hi, I'm Shashank Sharma</h1>
-  <h3 align="center" class="subhead">Technical Architect | Microsoft 365 &amp; Power Platform Architect</h3>
+  <h1>👋 Hi, I'm Shashank Sharma</h1>
+  <h3 class="subhead">Technical Architect | Microsoft 365 &amp; Power Platform Architect</h3>
 
-  <!-- PROFILE VIEWS & EXPERIENCE BADGES -->
-  <div align="center" class="badge-row">
+  <div class="badge-row">
+    <!-- ✅ WORKING: komarev profile views -->
     <img src="https://komarev.com/ghpvc/?username=shashank11sharma&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
+    <!-- ✅ WORKING: static shields.io badge -->
     <img src="https://img.shields.io/badge/13%2B-years%20experience-blue" alt="experience" />
   </div>
 
   <hr />
 
-  <!-- ABOUT ME -->
   <section class="about-section">
     <h3>🚀 About Me</h3>
     <p>🏢 <strong>Technical Specialist</strong> with <strong>13+ years</strong> of experience in developing and migrating enterprise-level applications.</p>
@@ -297,37 +98,35 @@
 
   <hr />
 
-  <!-- TECH STACK -->
   <section>
     <h3>🛠️ Tech Stack</h3>
     <div class="tech-stack">
 
-      <!-- Microsoft 365 & SharePoint -->
       <div class="tech-category">
         <h4>📌 Microsoft 365 &amp; SharePoint</h4>
         <div class="badges">
           <img src="https://img.shields.io/badge/SharePoint%20Online-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white" alt="SharePoint Online" />
           <img src="https://img.shields.io/badge/SharePoint%202016-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white" alt="SharePoint 2016" />
           <img src="https://img.shields.io/badge/SPFx-0078D4?style=for-the-badge&logo=sharepoint&logoColor=white" alt="SPFx" />
-          <img src="https://img.shields.io/badge/Sharegate-FF6C37?style=for-the-badge&logo=sharegate&logoColor=white" alt="Sharegate" />
+          <!-- ✅ FIXED: removed invalid logo=sharegate -->
+          <img src="https://img.shields.io/badge/Sharegate-FF6C37?style=for-the-badge" alt="Sharegate" />
           <img src="https://img.shields.io/badge/PnP%20PowerShell-0078D4?style=for-the-badge&logo=powershell&logoColor=white" alt="PnP PowerShell" />
         </div>
       </div>
 
-      <!-- Power Platform -->
       <div class="tech-category">
         <h4>⚡ Power Platform</h4>
         <div class="badges">
           <img src="https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white" alt="Power Apps" />
           <img src="https://img.shields.io/badge/Power%20Automate-0066CC?style=for-the-badge&logo=powerautomate&logoColor=white" alt="Power Automate" />
           <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
-          <img src="https://img.shields.io/badge/Power%20Virtual%20Agents-0B556A?style=for-the-badge&logo=powervirtualagents&logoColor=white" alt="Power Virtual Agents" />
+          <!-- ✅ FIXED: removed invalid logo=powervirtualagents -->
+          <img src="https://img.shields.io/badge/Power%20Virtual%20Agents-0B556A?style=for-the-badge" alt="Power Virtual Agents" />
           <img src="https://img.shields.io/badge/Dataverse-0B556A?style=for-the-badge&logo=microsoft&logoColor=white" alt="Dataverse" />
           <img src="https://img.shields.io/badge/Copilot-00A1F1?style=for-the-badge&logo=microsoftcopilot&logoColor=white" alt="Copilot" />
         </div>
       </div>
 
-      <!-- Development & Frameworks -->
       <div class="tech-category">
         <h4>💻 Development &amp; Frameworks</h4>
         <div class="badges">
@@ -340,7 +139,6 @@
         </div>
       </div>
 
-      <!-- Cloud & Infrastructure -->
       <div class="tech-category">
         <h4>☁️ Cloud &amp; Infrastructure</h4>
         <div class="badges">
@@ -351,7 +149,6 @@
         </div>
       </div>
 
-      <!-- APIs & Integration -->
       <div class="tech-category">
         <h4>🔧 APIs &amp; Integration</h4>
         <div class="badges">
@@ -362,7 +159,6 @@
         </div>
       </div>
 
-      <!-- AI & Analytics -->
       <div class="tech-category">
         <h4>🤖 AI &amp; Analytics</h4>
         <div class="badges">
@@ -376,7 +172,6 @@
 
   <hr />
 
-  <!-- CERTIFICATIONS -->
   <section>
     <h3>📜 Certifications</h3>
     <div class="cert-badges">
@@ -390,21 +185,21 @@
 
   <hr />
 
-  <!-- GITHUB STATS -->
   <section>
     <h3>📊 GitHub Stats</h3>
     <div class="github-stats">
       <img src="https://github-readme-stats.vercel.app/api?username=shashank11sharma&show_icons=true&theme=radical" alt="stats" width="48%" />
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=shashank11sharma&theme=radical" alt="streak" width="48%" />
+      <!-- ✅ FIXED: replaced herokuapp streak stats with demolab (working) -->
+      <img src="https://streak-stats.demolab.com/?user=shashank11sharma&theme=radical" alt="streak" width="48%" />
     </div>
     <div class="activity-graph">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=shashank11sharma&theme=react-dark" alt="activity graph" />
+      <!-- ✅ WORKING: vercel activity graph (with explicit params) -->
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=shashank11sharma&theme=react-dark&hide_border=true&area=true" alt="activity graph" />
     </div>
   </section>
 
   <hr />
 
-  <!-- TOP LANGUAGES -->
   <section>
     <h3>🏆 Top Languages</h3>
     <div class="top-langs">
@@ -414,7 +209,6 @@
 
   <hr />
 
-  <!-- CONNECT WITH ME -->
   <section>
     <h3>🔗 Connect with Me</h3>
     <div class="connect-links">
@@ -435,7 +229,6 @@
 
   <hr />
 
-  <!-- LATEST BLOG POSTS (placeholder) -->
   <section>
     <h3>📝 Latest Blog Posts</h3>
     <!-- BLOG-POST-LIST:START -->
@@ -447,7 +240,6 @@
 
   <hr />
 
-  <!-- NOW PLAYING (placeholder) -->
   <section>
     <h3>🎵 Now Playing</h3>
     <!-- SPOTIFY:START -->
@@ -459,11 +251,10 @@
 
   <hr />
 
-  <!-- FOOTER -->
   <div class="footer-note">
     ⭐️ <strong>Thanks for visiting!</strong> Feel free to explore my repositories and connect!
   </div>
 
-</div> <!-- end container -->
+</div>
 </body>
 </html>
