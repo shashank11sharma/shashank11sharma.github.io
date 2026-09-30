@@ -1,1 +1,469 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shashank Sharma · Profile</title>
+  <!-- Font Awesome for icons (optional, but used for email/phone link icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #0d1117; /* dark background similar to GitHub dark */
+      color: #c9d1d9;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #161b22;
+      border-radius: 24px;
+      padding: 2rem 2rem 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid #30363d;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      color: #f0f6fc;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.5px;
+    }
+
+    h1 .emoji {
+      font-size: 2rem;
+    }
+
+    .subhead {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #8b949e;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #30363d;
+      margin: 2rem 0 1.5rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .badge-row img {
+      vertical-align: middle;
+    }
+
+    .about-section p {
+      margin-bottom: 1rem;
+    }
+
+    .about-section strong {
+      color: #e6edf3;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    ul li::before {
+      content: "▹";
+      color: #58a6ff;
+      font-weight: bold;
+      display: inline-block;
+      width: 1.2rem;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .tech-category h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      color: #e6edf3;
+      border-left: 4px solid #58a6ff;
+      padding-left: 0.75rem;
+    }
+
+    .tech-category .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .tech-category .badges img {
+      height: 28px;
+      width: auto;
+      transition: transform 0.1s ease;
+    }
+
+    .tech-category .badges img:hover {
+      transform: scale(1.02);
+    }
+
+    .cert-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    .cert-badges img {
+      height: 28px;
+    }
+
+    .github-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .github-stats img {
+      width: 48%;
+      min-width: 280px;
+      border-radius: 12px;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      padding: 0.5rem;
+    }
+
+    .activity-graph {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .activity-graph img {
+      max-width: 100%;
+      border-radius: 12px;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      padding: 0.5rem;
+    }
+
+    .top-langs {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .top-langs img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      background: #0d1117;
+      border: 1px solid #30363d;
+      padding: 0.5rem;
+    }
+
+    .connect-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .connect-links a {
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.2s;
+    }
+
+    .connect-links a:hover {
+      opacity: 0.8;
+    }
+
+    .connect-links img {
+      height: 32px;
+      width: auto;
+      border-radius: 6px;
+    }
+
+    .placeholder-section {
+      background: #0d1117;
+      border: 1px dashed #30363d;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      color: #8b949e;
+      font-style: italic;
+      margin: 1rem 0;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 2rem;
+      color: #8b949e;
+      font-size: 0.95rem;
+    }
+
+    .footer-note strong {
+      color: #e6edf3;
+    }
+
+    /* responsive adjustments */
+    @media (max-width: 640px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .github-stats img {
+        width: 100%;
+      }
+      .badge-row img {
+        height: 22px;
+      }
+      .tech-category .badges img {
+        height: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- HEADER -->
+  <h1 align="center">👋 Hi, I'm Shashank Sharma</h1>
+  <h3 align="center" class="subhead">Technical Architect | Microsoft 365 &amp; Power Platform Architect</h3>
+
+  <!-- PROFILE VIEWS & EXPERIENCE BADGES -->
+  <div align="center" class="badge-row">
+    <img src="https://komarev.com/ghpvc/?username=shashank11sharma&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
+    <img src="https://img.shields.io/badge/13%2B-years%20experience-blue" alt="experience" />
+  </div>
+
+  <hr />
+
+  <!-- ABOUT ME -->
+  <section class="about-section">
+    <h3>🚀 About Me</h3>
+    <p>🏢 <strong>Technical Specialist</strong> with <strong>13+ years</strong> of experience in developing and migrating enterprise-level applications.</p>
+    <p>🎯 <strong>Expertise in:</strong></p>
+    <ul>
+      <li>SharePoint On-Premises &amp; Online</li>
+      <li>SPFx Framework &amp; Modernization</li>
+      <li>Power Platform (Apps, Automate, BI, Virtual Agents)</li>
+      <li>Azure Infrastructure &amp; Migrations</li>
+      <li>PnP Libraries, React, Graph API, REST API</li>
+    </ul>
+    <p>📌 <strong>Core Competencies:</strong></p>
+    <ul>
+      <li>End-to-end solution architecture &amp; design</li>
+      <li>Enterprise migration strategy (Sharegate, SPMT)</li>
+      <li>Information architecture &amp; governance</li>
+      <li>Center of Excellence (CoE) implementation</li>
+      <li>AI Builder &amp; Copilot integrations</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <!-- TECH STACK -->
+  <section>
+    <h3>🛠️ Tech Stack</h3>
+    <div class="tech-stack">
+
+      <!-- Microsoft 365 & SharePoint -->
+      <div class="tech-category">
+        <h4>📌 Microsoft 365 &amp; SharePoint</h4>
+        <div class="badges">
+          <img src="https://img.shields.io/badge/SharePoint%20Online-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white" alt="SharePoint Online" />
+          <img src="https://img.shields.io/badge/SharePoint%202016-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white" alt="SharePoint 2016" />
+          <img src="https://img.shields.io/badge/SPFx-0078D4?style=for-the-badge&logo=sharepoint&logoColor=white" alt="SPFx" />
+          <img src="https://img.shields.io/badge/Sharegate-FF6C37?style=for-the-badge&logo=sharegate&logoColor=white" alt="Sharegate" />
+          <img src="https://img.shields.io/badge/PnP%20PowerShell-0078D4?style=for-the-badge&logo=powershell&logoColor=white" alt="PnP PowerShell" />
+        </div>
+      </div>
+
+      <!-- Power Platform -->
+      <div class="tech-category">
+        <h4>⚡ Power Platform</h4>
+        <div class="badges">
+          <img src="https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white" alt="Power Apps" />
+          <img src="https://img.shields.io/badge/Power%20Automate-0066CC?style=for-the-badge&logo=powerautomate&logoColor=white" alt="Power Automate" />
+          <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+          <img src="https://img.shields.io/badge/Power%20Virtual%20Agents-0B556A?style=for-the-badge&logo=powervirtualagents&logoColor=white" alt="Power Virtual Agents" />
+          <img src="https://img.shields.io/badge/Dataverse-0B556A?style=for-the-badge&logo=microsoft&logoColor=white" alt="Dataverse" />
+          <img src="https://img.shields.io/badge/Copilot-00A1F1?style=for-the-badge&logo=microsoftcopilot&logoColor=white" alt="Copilot" />
+        </div>
+      </div>
+
+      <!-- Development & Frameworks -->
+      <div class="tech-category">
+        <h4>💻 Development &amp; Frameworks</h4>
+        <div class="badges">
+          <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+          <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+          <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+          <img src="https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="ASP.NET" />
+          <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#" />
+        </div>
+      </div>
+
+      <!-- Cloud & Infrastructure -->
+      <div class="tech-category">
+        <h4>☁️ Cloud &amp; Infrastructure</h4>
+        <div class="badges">
+          <img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Microsoft Azure" />
+          <img src="https://img.shields.io/badge/Azure%20AD-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure AD" />
+          <img src="https://img.shields.io/badge/Azure%20Functions-0062AD?style=for-the-badge&logo=azurefunctions&logoColor=white" alt="Azure Functions" />
+          <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+        </div>
+      </div>
+
+      <!-- APIs & Integration -->
+      <div class="tech-category">
+        <h4>🔧 APIs &amp; Integration</h4>
+        <div class="badges">
+          <img src="https://img.shields.io/badge/REST%20API-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="REST API" />
+          <img src="https://img.shields.io/badge/Graph%20API-0081CB?style=for-the-badge&logo=microsoft&logoColor=white" alt="Graph API" />
+          <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white" alt="JSON" />
+          <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
+        </div>
+      </div>
+
+      <!-- AI & Analytics -->
+      <div class="tech-category">
+        <h4>🤖 AI &amp; Analytics</h4>
+        <div class="badges">
+          <img src="https://img.shields.io/badge/AI%20Builder-00A1F1?style=for-the-badge&logo=microsoft&logoColor=white" alt="AI Builder" />
+          <img src="https://img.shields.io/badge/Copilot-00A1F1?style=for-the-badge&logo=microsoftcopilot&logoColor=white" alt="Copilot" />
+          <img src="https://img.shields.io/badge/Application%20Insights-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Application Insights" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <h3>📜 Certifications</h3>
+    <div class="cert-badges">
+      <img src="https://img.shields.io/badge/PL--900-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="PL-900" />
+      <img src="https://img.shields.io/badge/PL--600-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="PL-600" />
+      <img src="https://img.shields.io/badge/AZ--304-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AZ-304" />
+      <img src="https://img.shields.io/badge/AZ--305-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AZ-305" />
+      <img src="https://img.shields.io/badge/AI--900-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AI-900" />
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- GITHUB STATS -->
+  <section>
+    <h3>📊 GitHub Stats</h3>
+    <div class="github-stats">
+      <img src="https://github-readme-stats.vercel.app/api?username=shashank11sharma&show_icons=true&theme=radical" alt="stats" width="48%" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=shashank11sharma&theme=radical" alt="streak" width="48%" />
+    </div>
+    <div class="activity-graph">
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=shashank11sharma&theme=react-dark" alt="activity graph" />
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- TOP LANGUAGES -->
+  <section>
+    <h3>🏆 Top Languages</h3>
+    <div class="top-langs">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shashank11sharma&layout=compact&theme=radical" alt="Top Languages" />
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- CONNECT WITH ME -->
+  <section>
+    <h3>🔗 Connect with Me</h3>
+    <div class="connect-links">
+      <a href="mailto:Shashank11sharma@gmail.com">
+        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      </a>
+      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
+        <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+      </a>
+      <a href="tel:+918004838488">
+        <img src="https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone" />
+      </a>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- LATEST BLOG POSTS (placeholder) -->
+  <section>
+    <h3>📝 Latest Blog Posts</h3>
+    <!-- BLOG-POST-LIST:START -->
+    <div class="placeholder-section">
+      ⏳ Blog posts will appear here (BLOG-POST-LIST)
+    </div>
+    <!-- BLOG-POST-LIST:END -->
+  </section>
+
+  <hr />
+
+  <!-- NOW PLAYING (placeholder) -->
+  <section>
+    <h3>🎵 Now Playing</h3>
+    <!-- SPOTIFY:START -->
+    <div class="placeholder-section">
+      🎧 Spotify now playing will appear here (SPOTIFY)
+    </div>
+    <!-- SPOTIFY:END -->
+  </section>
+
+  <hr />
+
+  <!-- FOOTER -->
+  <div class="footer-note">
+    ⭐️ <strong>Thanks for visiting!</strong> Feel free to explore my repositories and connect!
+  </div>
+
+</div> <!-- end container -->
+</body>
+</html>
