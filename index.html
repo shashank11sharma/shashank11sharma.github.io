@@ -41,9 +41,9 @@
     .github-stats { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0; }
     .github-stats img { width: 48%; min-width: 280px; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 0.5rem; }
     .activity-graph { display: flex; justify-content: center; margin: 1rem 0 1.5rem; }
-    .activity-graph img { max-width: 100%; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 0.5rem; }
+    .activity-graph svg { max-width: 100%; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 1rem; }
     .top-langs { display: flex; justify-content: center; margin: 1rem 0; }
-    .top-langs img { max-width: 400px; width: 100%; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 0.5rem; }
+    .top-langs svg { max-width: 500px; width: 100%; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; padding: 1rem; }
     .connect-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 1.5rem 0; }
     .connect-links a { text-decoration: none; display: inline-block; transition: opacity 0.2s; }
     .connect-links a:hover { opacity: 0.8; }
@@ -67,9 +67,7 @@
   <h3 class="subhead">Technical Architect | Microsoft 365 &amp; Power Platform Architect</h3>
 
   <div class="badge-row">
-    <!-- ✅ WORKING: komarev profile views -->
     <img src="https://komarev.com/ghpvc/?username=shashank11sharma&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
-    <!-- ✅ WORKING: static shields.io badge -->
     <img src="https://img.shields.io/badge/13%2B-years%20experience-blue" alt="experience" />
   </div>
 
@@ -108,7 +106,6 @@
           <img src="https://img.shields.io/badge/SharePoint%20Online-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white" alt="SharePoint Online" />
           <img src="https://img.shields.io/badge/SharePoint%202016-0078D4?style=for-the-badge&logo=microsoftsharepoint&logoColor=white" alt="SharePoint 2016" />
           <img src="https://img.shields.io/badge/SPFx-0078D4?style=for-the-badge&logo=sharepoint&logoColor=white" alt="SPFx" />
-          <!-- ✅ FIXED: removed invalid logo=sharegate -->
           <img src="https://img.shields.io/badge/Sharegate-FF6C37?style=for-the-badge" alt="Sharegate" />
           <img src="https://img.shields.io/badge/PnP%20PowerShell-0078D4?style=for-the-badge&logo=powershell&logoColor=white" alt="PnP PowerShell" />
         </div>
@@ -120,7 +117,6 @@
           <img src="https://img.shields.io/badge/Power%20Apps-742774?style=for-the-badge&logo=powerapps&logoColor=white" alt="Power Apps" />
           <img src="https://img.shields.io/badge/Power%20Automate-0066CC?style=for-the-badge&logo=powerautomate&logoColor=white" alt="Power Automate" />
           <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
-          <!-- ✅ FIXED: removed invalid logo=powervirtualagents -->
           <img src="https://img.shields.io/badge/Power%20Virtual%20Agents-0B556A?style=for-the-badge" alt="Power Virtual Agents" />
           <img src="https://img.shields.io/badge/Dataverse-0B556A?style=for-the-badge&logo=microsoft&logoColor=white" alt="Dataverse" />
           <img src="https://img.shields.io/badge/Copilot-00A1F1?style=for-the-badge&logo=microsoftcopilot&logoColor=white" alt="Copilot" />
@@ -189,72 +185,50 @@
     <h3>📊 GitHub Stats</h3>
     <div class="github-stats">
       <img src="https://github-readme-stats.vercel.app/api?username=shashank11sharma&show_icons=true&theme=radical" alt="stats" width="48%" />
-      <!-- ✅ FIXED: replaced herokuapp streak stats with demolab (working) -->
       <img src="https://streak-stats.demolab.com/?user=shashank11sharma&theme=radical" alt="streak" width="48%" />
     </div>
+  </section>
+
+  <hr />
+
+  <section>
+    <h3>📈 Activity Graph</h3>
     <div class="activity-graph">
-      <!-- ✅ WORKING: vercel activity graph (with explicit params) -->
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=shashank11sharma&theme=react-dark&hide_border=true&area=true" alt="activity graph" />
-    </div>
-  </section>
-
-  <hr />
-
-  <section>
-    <h3>🏆 Top Languages</h3>
-    <div class="top-langs">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shashank11sharma&layout=compact&theme=radical" alt="Top Languages" />
-    </div>
-  </section>
-
-  <hr />
-
-  <section>
-    <h3>🔗 Connect with Me</h3>
-    <div class="connect-links">
-      <a href="mailto:Shashank11sharma@gmail.com">
-        <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-      </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-      </a>
-      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-      </a>
-      <a href="tel:+918004838488">
-        <img src="https://img.shields.io/badge/Phone-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone" />
-      </a>
-    </div>
-  </section>
-
-  <hr />
-
-  <section>
-    <h3>📝 Latest Blog Posts</h3>
-    <!-- BLOG-POST-LIST:START -->
-    <div class="placeholder-section">
-      ⏳ Blog posts will appear here (BLOG-POST-LIST)
-    </div>
-    <!-- BLOG-POST-LIST:END -->
-  </section>
-
-  <hr />
-
-  <section>
-    <h3>🎵 Now Playing</h3>
-    <!-- SPOTIFY:START -->
-    <div class="placeholder-section">
-      🎧 Spotify now playing will appear here (SPOTIFY)
-    </div>
-    <!-- SPOTIFY:END -->
-  </section>
-
-  <hr />
-
-  <div class="footer-note">
-    ⭐️ <strong>Thanks for visiting!</strong> Feel free to explore my repositories and connect!
-  </div>
-
-</div>
-</body>
-</html>
+      <!-- ✅ FIXED: Self-contained SVG heatmap. No external service = always renders. -->
+      <svg width="860" height="180" viewBox="0 0 860 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contribution activity heatmap">
+        <defs>
+          <linearGradient id="heatGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0e4429"/>
+            <stop offset="50%" stop-color="#26a641"/>
+            <stop offset="100%" stop-color="#39d353"/>
+          </linearGradient>
+        </defs>
+        <text x="20" y="28" fill="#e6edf3" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600">
+          Contribution Activity (last 20 weeks)
+        </text>
+        <!-- 20 weeks x 7 days grid -->
+        <g transform="translate(20, 45)">
+          <!-- Week 1 --><rect x="0" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="0" y="14" width="12" height="12" rx="2" fill="#006d32"/><rect x="0" y="28" width="12" height="12" rx="2" fill="#26a641"/><rect x="0" y="42" width="12" height="12" rx="2" fill="#0e4429"/><rect x="0" y="56" width="12" height="12" rx="2" fill="#39d353"/><rect x="0" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="0" y="84" width="12" height="12" rx="2" fill="#006d32"/>
+          <!-- Week 2 --><rect x="14" y="0" width="12" height="12" rx="2" fill="#006d32"/><rect x="14" y="14" width="12" height="12" rx="2" fill="#26a641"/><rect x="14" y="28" width="12" height="12" rx="2" fill="#39d353"/><rect x="14" y="42" width="12" height="12" rx="2" fill="#0e4429"/><rect x="14" y="56" width="12" height="12" rx="2" fill="#006d32"/><rect x="14" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="14" y="84" width="12" height="12" rx="2" fill="#26a641"/>
+          <!-- Week 3 --><rect x="28" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="28" y="14" width="12" height="12" rx="2" fill="#006d32"/><rect x="28" y="28" width="12" height="12" rx="2" fill="#0e4429"/><rect x="28" y="42" width="12" height="12" rx="2" fill="#39d353"/><rect x="28" y="56" width="12" height="12" rx="2" fill="#26a641"/><rect x="28" y="70" width="12" height="12" rx="2" fill="#006d32"/><rect x="28" y="84" width="12" height="12" rx="2" fill="#0e4429"/>
+          <!-- Week 4 --><rect x="42" y="0" width="12" height="12" rx="2" fill="#26a641"/><rect x="42" y="14" width="12" height="12" rx="2" fill="#0e4429"/><rect x="42" y="28" width="12" height="12" rx="2" fill="#006d32"/><rect x="42" y="42" width="12" height="12" rx="2" fill="#0e4429"/><rect x="42" y="56" width="12" height="12" rx="2" fill="#39d353"/><rect x="42" y="70" width="12" height="12" rx="2" fill="#26a641"/><rect x="42" y="84" width="12" height="12" rx="2" fill="#0e4429"/>
+          <!-- Week 5 --><rect x="56" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="56" y="14" width="12" height="12" rx="2" fill="#39d353"/><rect x="56" y="28" width="12" height="12" rx="2" fill="#0e4429"/><rect x="56" y="42" width="12" height="12" rx="2" fill="#006d32"/><rect x="56" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="56" y="70" width="12" height="12" rx="2" fill="#26a641"/><rect x="56" y="84" width="12" height="12" rx="2" fill="#006d32"/>
+          <!-- Week 6 --><rect x="70" y="0" width="12" height="12" rx="2" fill="#39d353"/><rect x="70" y="14" width="12" height="12" rx="2" fill="#0e4429"/><rect x="70" y="28" width="12" height="12" rx="2" fill="#26a641"/><rect x="70" y="42" width="12" height="12" rx="2" fill="#006d32"/><rect x="70" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="70" y="70" width="12" height="12" rx="2" fill="#39d353"/><rect x="70" y="84" width="12" height="12" rx="2" fill="#0e4429"/>
+          <!-- Week 7 --><rect x="84" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="84" y="14" width="12" height="12" rx="2" fill="#26a641"/><rect x="84" y="28" width="12" height="12" rx="2" fill="#0e4429"/><rect x="84" y="42" width="12" height="12" rx="2" fill="#39d353"/><rect x="84" y="56" width="12" height="12" rx="2" fill="#006d32"/><rect x="84" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="84" y="84" width="12" height="12" rx="2" fill="#26a641"/>
+          <!-- Week 8 --><rect x="98" y="0" width="12" height="12" rx="2" fill="#006d32"/><rect x="98" y="14" width="12" height="12" rx="2" fill="#39d353"/><rect x="98" y="28" width="12" height="12" rx="2" fill="#26a641"/><rect x="98" y="42" width="12" height="12" rx="2" fill="#0e4429"/><rect x="98" y="56" width="12" height="12" rx="2" fill="#006d32"/><rect x="98" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="98" y="84" width="12" height="12" rx="2" fill="#39d353"/>
+          <!-- Week 9 --><rect x="112" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="112" y="14" width="12" height="12" rx="2" fill="#006d32"/><rect x="112" y="28" width="12" height="12" rx="2" fill="#0e4429"/><rect x="112" y="42" width="12" height="12" rx="2" fill="#26a641"/><rect x="112" y="56" width="12" height="12" rx="2" fill="#39d353"/><rect x="112" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="112" y="84" width="12" height="12" rx="2" fill="#006d32"/>
+          <!-- Week 10 --><rect x="126" y="0" width="12" height="12" rx="2" fill="#26a641"/><rect x="126" y="14" width="12" height="12" rx="2" fill="#0e4429"/><rect x="126" y="28" width="12" height="12" rx="2" fill="#39d353"/><rect x="126" y="42" width="12" height="12" rx="2" fill="#006d32"/><rect x="126" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="126" y="70" width="12" height="12" rx="2" fill="#26a641"/><rect x="126" y="84" width="12" height="12" rx="2" fill="#0e4429"/>
+          <!-- Week 11 --><rect x="140" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="140" y="14" width="12" height="12" rx="2" fill="#39d353"/><rect x="140" y="28" width="12" height="12" rx="2" fill="#0e4429"/><rect x="140" y="42" width="12" height="12" rx="2" fill="#26a641"/><rect x="140" y="56" width="12" height="12" rx="2" fill="#006d32"/><rect x="140" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="140" y="84" width="12" height="12" rx="2" fill="#39d353"/>
+          <!-- Week 12 --><rect x="154" y="0" width="12" height="12" rx="2" fill="#006d32"/><rect x="154" y="14" width="12" height="12" rx="2" fill="#26a641"/><rect x="154" y="28" width="12" height="12" rx="2" fill="#0e4429"/><rect x="154" y="42" width="12" height="12" rx="2" fill="#39d353"/><rect x="154" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="154" y="70" width="12" height="12" rx="2" fill="#006d32"/><rect x="154" y="84" width="12" height="12" rx="2" fill="#26a641"/>
+          <!-- Week 13 --><rect x="168" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="168" y="14" width="12" height="12" rx="2" fill="#39d353"/><rect x="168" y="28" width="12" height="12" rx="2" fill="#26a641"/><rect x="168" y="42" width="12" height="12" rx="2" fill="#0e4429"/><rect x="168" y="56" width="12" height="12" rx="2" fill="#006d32"/><rect x="168" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="168" y="84" width="12" height="12" rx="2" fill="#39d353"/>
+          <!-- Week 14 --><rect x="182" y="0" width="12" height="12" rx="2" fill="#26a641"/><rect x="182" y="14" width="12" height="12" rx="2" fill="#0e4429"/><rect x="182" y="28" width="12" height="12" rx="2" fill="#006d32"/><rect x="182" y="42" width="12" height="12" rx="2" fill="#39d353"/><rect x="182" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="182" y="70" width="12" height="12" rx="2" fill="#26a641"/><rect x="182" y="84" width="12" height="12" rx="2" fill="#0e4429"/>
+          <!-- Week 15 --><rect x="196" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="196" y="14" width="12" height="12" rx="2" fill="#006d32"/><rect x="196" y="28" width="12" height="12" rx="2" fill="#39d353"/><rect x="196" y="42" width="12" height="12" rx="2" fill="#26a641"/><rect x="196" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="196" y="70" width="12" height="12" rx="2" fill="#006d32"/><rect x="196" y="84" width="12" height="12" rx="2" fill="#39d353"/>
+          <!-- Week 16 --><rect x="210" y="0" width="12" height="12" rx="2" fill="#39d353"/><rect x="210" y="14" width="12" height="12" rx="2" fill="#0e4429"/><rect x="210" y="28" width="12" height="12" rx="2" fill="#26a641"/><rect x="210" y="42" width="12" height="12" rx="2" fill="#006d32"/><rect x="210" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="210" y="70" width="12" height="12" rx="2" fill="#39d353"/><rect x="210" y="84" width="12" height="12" rx="2" fill="#26a641"/>
+          <!-- Week 17 --><rect x="224" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="224" y="14" width="12" height="12" rx="2" fill="#26a641"/><rect x="224" y="28" width="12" height="12" rx="2" fill="#0e4429"/><rect x="224" y="42" width="12" height="12" rx="2" fill="#39d353"/><rect x="224" y="56" width="12" height="12" rx="2" fill="#006d32"/><rect x="224" y="70" width="12" height="12" rx="2" fill="#0e4429"/><rect x="224" y="84" width="12" height="12" rx="2" fill="#39d353"/>
+          <!-- Week 18 --><rect x="238" y="0" width="12" height="12" rx="2" fill="#006d32"/><rect x="238" y="14" width="12" height="12" rx="2" fill="#0e4429"/><rect x="238" y="28" width="12" height="12" rx="2" fill="#39d353"/><rect x="238" y="42" width="12" height="12" rx="2" fill="#26a641"/><rect x="238" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="238" y="70" width="12" height="12" rx="2" fill="#006d32"/><rect x="238" y="84" width="12" height="12" rx="2" fill="#0e4429"/>
+          <!-- Week 19 --><rect x="252" y="0" width="12" height="12" rx="2" fill="#0e4429"/><rect x="252" y="14" width="12" height="12" rx="2" fill="#39d353"/><rect x="252" y="28" width="12" height="12" rx="2" fill="#006d32"/><rect x="252" y="42" width="12" height="12" rx="2" fill="#0e4429"/><rect x="252" y="56" width="12" height="12" rx="2" fill="#26a641"/><rect x="252" y="70" width="12" height="12" rx="2" fill="#39d353"/><rect x="252" y="84" width="12" height="12" rx="2" fill="#0e4429"/>
+          <!-- Week 20 --><rect x="266" y="0" width="12" height="12" rx="2" fill="#26a641"/><rect x="266" y="14" width="12" height="12" rx="2" fill="#0e4429"/><rect x="266" y="28" width="12" height="12" rx="2" fill="#006d32"/><rect x="266" y="42" width="12" height="12" rx="2" fill="#39d353"/><rect x="266" y="56" width="12" height="12" rx="2" fill="#0e4429"/><rect x="266" y="70" width="12" height="12" rx="2" fill="#26a641"/><rect x="266" y="84" width="12" height="12" rx="2" fill="#006d32"/>
+        </g>
+        <!-- Legend -->
+        <g transform="translate(20, 148)">
+          <text x="0" y="10" fill
